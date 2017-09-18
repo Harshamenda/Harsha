@@ -1,0 +1,91 @@
+<script>
+    var n='55';
+    if(!isNaN(n))
+    document.write("sqaure of "+ n + "is" + (n*n));
+    else
+    document.write("input is not a number");
+    </script>
+<br>
+<script>
+        var n=prompt("enter a number");
+        if(!isNaN(n))
+        document.write("sqaure of "+ n + "is" + (n*n));
+        else
+        document.write("input is not a number");
+        </script>
+    
+<br>
+<script>
+        var n=100;
+        
+        document.write(Math.sqrt(n) + "<br>");
+        document.write(Math.pow(5,3) + "<br>");
+        document.write(Math.abs(-54) + "<br>");
+        document.write(Math.min(45,55,56,89) + "<br>");
+        document.write(Math.max(45,55,56,89) + "<br>");
+        document.write(Math.random(2) + "<br>");
+        document.write(Math.round(48.89) + "<br>");
+        </script>
+        <br>
+        <script>
+    var d = new Date();
+  var msg1= d.getDate()+"/"+(d.getMonth()+1)+"/"+d.getFullYear(); /*month+1*/
+ document.write("todays date" +msg1);
+
+ msg1=d.getHours()+":"+d.getMinutes()+":"+d.getSeconds();
+ document.write("time is" +msg1);
+</script>
+
+<script>
+     var d = new Date();
+     function showdate()
+     {
+        var msg1= d.getDate()+"/"+(d.getMonth()+1)+"/"+d.getFullYear(); /*month+1*/
+ document.getElementById("span1").innerHTML=msg1;
+
+
+     }
+     function showtime()
+     {
+      var  msg2=d.getHours()+":"+d.getMinutes()+":"+d.getSeconds();
+ document.getElementById("span1").innerHTML=msg2;
+     }
+ 
+</script>
+
+<h1> client details</h1>
+
+<button onclick="showdate()" >Show Date </button>
+<button onclick="showtime()">Showtime</button>
+
+<span id="span1"></span>
+
+<br>
+
+
+<script>
+      
+        function display(p)
+        {
+            var d = new Date();
+            var m=" ";
+            if(p=="date")
+            m= d.getDate()+"/"+(d.getMonth()+1)+"/"+d.getFullYear(); /*month+1*/
+
+   else if(p=="time")
+   
+       
+         m=d.getHours()+":"+d.getMinutes()+":"+d.getSeconds();
+    document.getElementById("span2").innerHTML=m;
+        }
+    
+   </script>
+   
+   <h1> client details</h1>
+   
+   <button onclick="display(this.value)" value="time" >Show time </button>
+   <button onclick="display(this.value)" value="date" >Show date</button>
+   
+
+   <span id="span2"></span>
+   
